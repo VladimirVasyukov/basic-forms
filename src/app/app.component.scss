@@ -1,0 +1,57 @@
+.content {
+  max-width: 1440px;
+  padding: 68px 18px 0 52px;
+  margin: 0 auto;
+}
+
+.form__style {
+  max-width: 528px;
+}
+
+.title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 32px;
+  color: rgba(27, 31, 59, 0.8);
+}
+
+.input {
+  margin-bottom: 24px;
+}
+
+.group {
+  margin: 24px 0;
+}
+
+.radioblock {
+  min-width: 264px;
+}
+
+.input__skill {
+  min-width: 454px;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__trash {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+}
+
+.button__trash::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin: 0 22px 20px;
+  background: url(../../src/assets/button-trash.svg) 0 / 100% no-repeat;
+}

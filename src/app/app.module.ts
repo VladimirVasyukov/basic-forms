@@ -1,18 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+import { TuiRootModule, TuiButtonModule, TuiErrorModule } from '@taiga-ui/core';
+
+import {
+  TuiDataListWrapperModule,
+  TuiFieldErrorPipeModule,
+  TuiInputModule,
+  TuiRadioBlockModule,
+  TuiSelectModule,
+} from '@taiga-ui/kit';
+
 import { AppComponent } from './app.component';
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    TuiRootModule,
+    TuiInputModule,
+    TuiSelectModule,
+    TuiDataListWrapperModule,
+    TuiRadioBlockModule,
+    TuiButtonModule,
+    TuiErrorModule,
+    TuiFieldErrorPipeModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
